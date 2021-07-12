@@ -1,5 +1,5 @@
 <template>
-  <h1>rick and morty</h1>
+  <router-view></router-view>
 </template>
 
 <style>
