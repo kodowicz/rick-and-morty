@@ -19,5 +19,8 @@ module.exports = {
     'vue',
   ],
   rules: {
+    'no-shadow': 'off',
+    'import/no-unresolved': 'off',
+    'import/prefer-default-export': 'warn',
   },
 };

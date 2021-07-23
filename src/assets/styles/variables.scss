@@ -1,0 +1,19 @@
+:root {
+  --padding: 10px;
+  --padding-left: 20px;
+  --white: #ffffff;
+  --gray: #a9b1bd;
+  --light-gray: #e5eaf4;
+  --light-gray-trans: transparentize(--light-gray, 0.75);
+  --cyan: #11b0c8;
+
+  @media (min-width: 768px) {
+    --padding: 40px;
+    --padding-left: 80px;
+  }
+
+  @media (min-width: 1200px) {
+    --padding: 60px;
+    --padding-left: 140px;
+  }
+}
