@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 export const clickOutside = {
   beforeMount(el, binding) {
     el.clickOutsideEvent = (event) => {
