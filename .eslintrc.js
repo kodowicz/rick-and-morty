@@ -21,6 +21,8 @@ module.exports = {
   rules: {
     'no-shadow': 'off',
     'import/no-unresolved': 'off',
-    'import/prefer-default-export': 'warn',
+    'object-curly-newline': 'off',
+    'consistent-return': 'off',
+    'import/prefer-default-export': 'off',
   },
 };
