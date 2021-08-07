@@ -1,12 +1,12 @@
 <template>
   <header class="header">
     <div
-      class="logo"
+      class="header__logo"
       @click="resetVariables"
     >
       <img src="@/assets/images/logo.png">
     </div>
-    <search-bar />
+      <search-bar />
   </header>
 </template>
 
@@ -34,19 +34,21 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid var(--gray);
-  margin: 16px auto;
+  margin: 1.6rem auto;
 
   @media (min-width: 1000px) {
-    height: 134px;
+    height: 10rem;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0 140px;
+    margin: 2rem auto;
   }
 }
-.logo {
-  width: 240px;
-  height: 70px;
+
+.header__logo {
+  width: 17rem;
+  height: 6rem;
+  margin: 1.6rem auto;
 
   img {
     width: 100%;
@@ -56,8 +58,8 @@ export default {
 
   @media (min-width: 1000px) {
     margin: 0;
-    width: 240px;
-    margin-right: 80px;
+    width: 15rem;
+    margin-right: 8rem;
   }
 }
 </style>

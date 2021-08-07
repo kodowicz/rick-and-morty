@@ -1,19 +1,14 @@
 :root {
-  --padding: 10px;
-  --padding-left: 20px;
+  --padding: 1rem;
+  --padding-left: 2rem;
   --white: #ffffff;
   --gray: #a9b1bd;
   --light-gray: #e5eaf4;
-  --light-gray-trans: transparentize(--light-gray, 0.75);
+  --light-gray-trans: #f5f8ff;
   --cyan: #11b0c8;
 
   @media (min-width: 768px) {
-    --padding: 40px;
-    --padding-left: 80px;
-  }
-
-  @media (min-width: 1200px) {
-    --padding: 60px;
-    --padding-left: 140px;
+    --padding: 4rem;
+    --padding-left: 8rem;
   }
 }

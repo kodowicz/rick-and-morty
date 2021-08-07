@@ -68,8 +68,14 @@ export default {
 <style lang="scss" scoped>
 .character__wrapper {
   position: relative;
-  width: 43px;
-  height: 43px;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+
+  @media (min-width: 1000px) {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
 }
 
 .character__label {
@@ -90,6 +96,11 @@ export default {
   &.character__label--favorite {
     background: var(--cyan);
     color: var(--white);
+  }
+
+  svg {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
