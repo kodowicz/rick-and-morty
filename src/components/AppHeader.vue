@@ -6,7 +6,7 @@
     >
       <img src="@/assets/images/logo.png">
     </div>
-      <search-bar />
+    <search-bar />
   </header>
 </template>
 
@@ -58,7 +58,7 @@ export default {
 
   @media (min-width: 1000px) {
     margin: 0;
-    width: 15rem;
+    width: 20rem;
     margin-right: 8rem;
   }
 }

@@ -72,13 +72,15 @@
               {{ character.name }}
             </td>
             <td class="table__column table__column--gender">
-              <img
-                class="table__column__gender"
-                :src="
-                  require(`@/assets/icons/gender-${character.gender.toLowerCase()}.svg`)
-                "
-              >
-              <span>{{ character.gender }}</span>
+              <div class="table__column__gender">
+                <img
+                  class="table__column__gender--img"
+                  :src="
+                    require(`@/assets/icons/gender-${character.gender.toLowerCase()}.svg`)
+                  "
+                >
+                <span>{{ character.gender }}</span>
+              </div>
             </td>
             <td class="table__column">
               {{ character.species }}
@@ -104,7 +106,16 @@ export default {
   components: {
     FavoriteButton,
   },
-  props: ['characters', 'loading', 'error'],
+  props: {
+    characters: {
+      type: Array,
+      default() {
+        return [];
+      },
+    },
+    loading: Boolean,
+    error: Boolean,
+  },
   setup(props) {
     const characters = toRef(props, 'characters');
     const tableHeads = ref([
@@ -194,9 +205,10 @@ export default {
 .table__column--loading {
   padding: 3rem 0;
 }
+
 .table__column__element--loading {
   height: 2rem;
-  background: var(--light-gray)-trans;
+  background: var(--light-gray-trans);
 }
 
 .table__column__picture {
@@ -224,7 +236,12 @@ export default {
 }
 
 .table__column__gender {
-  margin-right: 4px;
-  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.table__column__gender--img {
+  width: 2rem;
+  margin-right: 0.4rem;
 }
 </style>

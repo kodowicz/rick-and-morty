@@ -66,9 +66,5 @@ export default {
     border-bottom: 3px solid var(--cyan);
     color: var(--cyan);
   }
-
-  @media (min-width: 1000px) {
-    font-size: 1.4rem;
-  }
 }
 </style>
