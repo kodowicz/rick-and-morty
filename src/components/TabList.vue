@@ -46,30 +46,25 @@ export default {
 
 <style lang="scss" scoped>
 .tablist {
-  margin: 24px auto;
+  margin: 5rem auto 3rem;
   width: fit-content;
 
-  @media (min-width: 768px) {
-    margin: 24px var(--padding-left);
+  @media (min-width: 1000px) {
+    margin: 3rem auto;
   }
 }
 
 .tablist__button {
   display: inline;
   padding: 0;
-  margin: 0 20px;
+  margin: 0 2rem;
   outline: none;
   line-height: 150%;
-  font-size: 1rem;
+  font-size: 1.6rem;
 
   &[aria-selected='true'] {
     border-bottom: 3px solid var(--cyan);
     color: var(--cyan);
-  }
-
-  @media (min-width: 768px) {
-    margin: 0;
-    margin-right: 80px;
   }
 }
 </style>

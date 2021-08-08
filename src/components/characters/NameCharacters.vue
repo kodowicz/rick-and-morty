@@ -5,10 +5,14 @@
     :error="error"
   >
     <template #error>
-      <p>Couldn't find any Rick's and Morty's friends</p>
+      <p class="table-info_text">
+        Couldn't find any Rick's and Morty's friends
+      </p>
     </template>
     <template #empty>
-      <p>Couldn't find any Rick's and Morty's friends</p>
+      <p class="table-info_text">
+        Couldn't find any Rick's and Morty's friends
+      </p>
     </template>
   </characters-table>
 </template>

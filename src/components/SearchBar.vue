@@ -129,35 +129,36 @@ export default {
 
 <style lang="scss" scoped>
 .form {
-  width: 300px;
-  font-size: 16px;
+  width: 30rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: var(--gray);
   border: 1px solid var(--gray);
-  border-radius: 12px;
+  border-radius: 1.7rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   background: var(--white);
-  margin: 16px 0;
+  margin: 1.6rem auto;
   position: relative;
 
   @media (min-width: 768px) {
-    width: auto;
-    grid-template-columns: 123px 128px 250px;
+    width: max-content;
+    grid-template-columns: max-content 13rem 20rem;
     grid-template-rows: auto;
   }
 
   @media (min-width: 1000px) {
     margin: 0;
+    font-size: 1.4rem;
   }
 }
 
 .form__label {
-  padding: 12px 16px;
+  padding: 1.2rem 1.6rem;
 
   @media (min-width: 768px) {
-    padding: 16px 20px;
+    padding: 1.4rem 2rem;
   }
 }
 
@@ -168,13 +169,13 @@ export default {
 }
 
 .form__select__label {
-  padding: 12px;
+  padding: 1.2rem 1.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: 768px) {
-    padding: 16px;
+    padding: 1.4rem 1.6rem;
   }
 }
 
@@ -184,8 +185,8 @@ export default {
 }
 
 .form__select__label__icon {
-  height: 10px;
-  width: 10px;
+  height: 1rem;
+  width: 1rem;
   transition: transform 0.2s ease-in;
 
   &.expanded {
@@ -196,14 +197,14 @@ export default {
 .form__select__listbox {
   position: absolute;
   left: 0;
-  width: 150px;
+  width: 15rem;
   margin: 0 -1px;
   padding: 0;
   border: 1px solid var(--gray);
   background: var(--white);
   z-index: 1;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 1.7rem;
+  border-bottom-right-radius: 1.7rem;
 
   @media (min-width: 768px) {
     width: calc(100% + 2px);
@@ -213,7 +214,7 @@ export default {
 }
 
 .form__select__option {
-  padding: 12px;
+  padding: 1.2rem 1.6rem;
   list-style: none;
   border-top: 1px solid var(--gray);
   text-transform: capitalize;
@@ -223,8 +224,8 @@ export default {
   }
 
   &:last-of-type {
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 1.7rem;
+    border-bottom-right-radius: 1.7rem;
   }
 
   &:hover {
@@ -233,7 +234,7 @@ export default {
   }
 
   @media (min-width: 768px) {
-    padding: 16px;
+    padding: 1.4rem 1.6rem;
   }
 }
 
@@ -257,9 +258,9 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  width: 55px;
+  width: 5.5rem;
   height: 100%;
-  padding: 8px;
+  padding: 1rem;
 
   svg {
     width: 100%;
@@ -267,15 +268,15 @@ export default {
   }
 
   @media (min-width: 768px) {
-    padding: 12px;
+    padding: 1.2rem 1.2rem;
   }
 }
 
 .form__search__input {
   font: inherit;
   color: var(--cyan);
-  padding: 12px 16px;
-  width: calc(100% - 55px);
+  padding: 1.2rem 1.6rem;
+  width: calc(100% - 5.5rem);
   height: 100%;
   border: none;
   background: none;
@@ -291,7 +292,7 @@ export default {
   }
 
   @media (min-width: 768px) {
-    padding: 16px;
+    padding: 1.4rem 1.6rem;
   }
 }
 </style>
